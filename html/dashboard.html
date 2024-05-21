@@ -1,0 +1,23 @@
+<div id='dashboard'>
+  <div id='ctrls-block'>
+    <label>Операции: </label>
+    <button id='btn-new-node' class='ed-mode-dependent' disabled>Создать</button>
+    <button id='btn-edit-node' class='ed-mode-dependent' disabled>Изменить</button>
+    <button id='btn-del-node' class='ed-mode-dependent' disabled>Удалить</button>
+    <div>
+      <button id='btn-editor-mode'>Режим редактирования</button><br>
+      <label>Родитель: </label><select id='fld-node-parent' class='ed-mode-dependent' disabled></select><br>
+      <label>Название: </label><input id='fld-node-title' type='text' maxlength='50' size='50' class='ed-mode-dependent' disabled /><br>
+      <label>Описание: </label><input id='fld-node-descr' type='text' maxlength='250' size='50' class='ed-mode-dependent' disabled />
+    </div>
+  </div>
+  <div id='help-block'>
+    <p>Перед выполнением операции следует включить режим редактирования кнопкой [<b>Режим&nbsp;редактирования</b>],
+выполнить требуемые модификации и нажать одну из кнопок: [<b>Создать</b>], [<b>Изменить</b>] или [<b>Удалить</b>].</p>
+    <p><b><u>Создать:</u> </b> Создание нового объекта. Из выпадающего списка выбрать объект, который станет родительским, заполнить поля
+<b>Название</b> и <b>Описание</b> и нажать кнопку [<b>Создать</b>].</p>
+    <p><b><u>Изменить:</u> </b>Изменение параметров объекта. Если нужно переместить объект под другого родителя, следует выбрать его
+из выпадающего списка. Отредактировать поля <b>Название</b> и <b>Описание</b> и нажать кнопку [<b>Изменить</b>].</p>
+    <p><b><u>Удалить:</u> </b>Удаление объекта и всех его потомков. Просто нажмите кнопку [<b>Удалить</b>].</p>
+  </div>
+</div>

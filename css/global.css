@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/*
+  Глобальные стили
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 12px Helvetica,Arial,sans-serif;
+  width: 100%;
+}
+
+/* Убираем рамки и промежутки у таблиц */
+table {
+  border: 0;
+  border-spacing: 0 0;
+  padding: 0;
+}
+
+td {
+  padding: 0;
+}
+
+/* Стили групп элементов */
+fieldset {
+  margin: 0;
+  padding: 5px 13px 8px 13px;
+  border: 1px solid silver;
+  border-radius: 4px;
+}
+
+legend {
+  padding: 2px;
+}
+
+button {
+  padding: 0 5px;
+}
+
+hr {
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border: none;
+  border-bottom: 1px solid navy;
+}
