@@ -110,7 +110,7 @@ class App
       if (response.ok)
         return response.json();
       else
-        return Promize.reject(response);
+        return Promise.reject(response);
     })
     .then((data) => {
       if (data.err !=0) {
