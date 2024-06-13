@@ -76,6 +76,10 @@
   font-weight: bold;
 }
 
+#ctrls-block {
+  position: relative;
+}
+
 #ctrls-block,#help-block {
   flex: 1;
 }
@@ -88,6 +92,15 @@
 #dashboard p {
   border-bottom: 1px dotted black;
   margin-bottom: 3px;
+}
+
+#btn-editor-mode {
+  margin-bottom: 3px;
+}
+
+#dashboard-editor {
+  position: absolute;
+  bottom: 3px;
 }
 
 /* Стили элементов дерева
