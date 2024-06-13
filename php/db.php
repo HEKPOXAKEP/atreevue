@@ -3,7 +3,7 @@
 // параметры подключения к БД через PDO
 $dbc=[
   'host'=>'localhost',
-  'name'=>'aTreeVue',
+  'dbname'=>'aTreeVue',
   'user'=>'root',
   'pwd'=>'',
   'encoding'=>'utf8'
@@ -14,7 +14,7 @@ $conn = null;  // глобальный объект соединения с БД
 function connectDb() {
   global $dbc,$conn;
 
-  $dsn="mysql:host={$dbc['host']};dbname={$dbc['name']};charset={$dbc['encoding']}";
+  $dsn="mysql:host={$dbc['host']};dbname={$dbc['dbname']};charset={$dbc['encoding']}";
 
   $conn = new PDO($dsn,$dbc['user'],$dbc['pwd']);
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
